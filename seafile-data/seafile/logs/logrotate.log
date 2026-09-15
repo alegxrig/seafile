@@ -1,0 +1,508 @@
+reading config file /scripts/logrotate-conf/seafile-nginx
+Creating stub state file: /var/lib/logrotate/status
+acquired lock on state file /var/lib/logrotate/statusReading state from file: /var/lib/logrotate/status
+Allocating hash table for state file, size 64 entries
+
+Handling 1 logs
+
+rotating pattern: /shared/seafile/logs/seahub.access.log
+/shared/seafile/logs/seahub.error.log
+/shared/seafile/logs/seafhttp.access.log
+/shared/seafile/logs/seafhttp.error.log
+/shared/seafile/logs/seafdav.access.log
+/shared/seafile/logs/seafdav.error.log
+
+ forced from command line (7 rotations)
+empty log files are not rotated, old logs are removed
+considering log /shared/seafile/logs/seahub.access.log
+Creating new state
+  Now: 2026-08-25 23:54
+  Last rotated at 2026-08-25 23:00
+  log needs rotating
+considering log /shared/seafile/logs/seahub.error.log
+Creating new state
+  Now: 2026-08-25 23:54
+  Last rotated at 2026-08-25 23:00
+  log needs rotating
+considering log /shared/seafile/logs/seafhttp.access.log
+Creating new state
+  Now: 2026-08-25 23:54
+  Last rotated at 2026-08-25 23:00
+  log needs rotating
+considering log /shared/seafile/logs/seafhttp.error.log
+Creating new state
+  Now: 2026-08-25 23:54
+  Last rotated at 2026-08-25 23:00
+  log does not need rotating (log is empty)
+considering log /shared/seafile/logs/seafdav.access.log
+Creating new state
+  Now: 2026-08-25 23:54
+  Last rotated at 2026-08-25 23:00
+  log does not need rotating (log is empty)
+considering log /shared/seafile/logs/seafdav.error.log
+Creating new state
+  Now: 2026-08-25 23:54
+  Last rotated at 2026-08-25 23:00
+  log does not need rotating (log is empty)
+rotating log /shared/seafile/logs/seahub.access.log, log->rotateCount is 7
+Converted '.%Y-%m-%d' -> '.%Y-%m-%d'
+dateext suffix '.2026-08-25'
+glob pattern '.[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]'
+glob finding old rotated logs failed
+rotating log /shared/seafile/logs/seahub.error.log, log->rotateCount is 7
+Converted '.%Y-%m-%d' -> '.%Y-%m-%d'
+dateext suffix '.2026-08-25'
+glob pattern '.[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]'
+glob finding old rotated logs failed
+rotating log /shared/seafile/logs/seafhttp.access.log, log->rotateCount is 7
+Converted '.%Y-%m-%d' -> '.%Y-%m-%d'
+dateext suffix '.2026-08-25'
+glob pattern '.[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]'
+glob finding old rotated logs failed
+renaming /shared/seafile/logs/seahub.access.log to /shared/seafile/logs/seahub.access.log.2026-08-25
+creating new /shared/seafile/logs/seahub.access.log mode = 0640 uid = 0 gid = 0
+renaming /shared/seafile/logs/seahub.error.log to /shared/seafile/logs/seahub.error.log.2026-08-25
+creating new /shared/seafile/logs/seahub.error.log mode = 0640 uid = 0 gid = 0
+renaming /shared/seafile/logs/seafhttp.access.log to /shared/seafile/logs/seafhttp.access.log.2026-08-25
+creating new /shared/seafile/logs/seafhttp.access.log mode = 0640 uid = 0 gid = 0
+running postrotate script
+reading config file /scripts/logrotate-conf/seafile
+acquired lock on state file /var/lib/logrotate/statusReading state from file: /var/lib/logrotate/status
+Allocating hash table for state file, size 64 entries
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+
+Handling 1 logs
+
+rotating pattern: /opt/seafile/logs/seafile.log
+/opt/seafile/logs/seahub.log
+/opt/seafile/logs/seafdav.log
+/opt/seafile/logs/file_updates_sender.log
+/opt/seafile/logs/repo_old_file_auto_del_scan.log
+/opt/seafile/logs/seahub_email_sender.log
+/opt/seafile/logs/work_weixin_notice_sender.log
+/opt/seafile/logs/index.log
+/opt/seafile/logs/content_scan.log
+/opt/seafile/logs/fileserver.log
+/opt/seafile/logs/fileserver-access.log
+/opt/seafile/logs/fileserver-error.log
+/opt/seafile/logs/notification-server.log
+/opt/seafile/logs/notification-server-error.log
+
+ forced from command line (7 rotations)
+empty log files are not rotated, old logs are removed
+considering log /opt/seafile/logs/seafile.log
+Creating new state
+  Now: 2026-08-25 23:55
+  Last rotated at 2026-08-25 23:00
+  log needs rotating
+considering log /opt/seafile/logs/seahub.log
+Creating new state
+  Now: 2026-08-25 23:55
+  Last rotated at 2026-08-25 23:00
+  log needs rotating
+considering log /opt/seafile/logs/seafdav.log
+  log /opt/seafile/logs/seafdav.log does not exist -- skipping
+Creating new state
+considering log /opt/seafile/logs/file_updates_sender.log
+Creating new state
+  Now: 2026-08-25 23:55
+  Last rotated at 2026-08-25 23:00
+  log does not need rotating (log is empty)
+considering log /opt/seafile/logs/repo_old_file_auto_del_scan.log
+  log /opt/seafile/logs/repo_old_file_auto_del_scan.log does not exist -- skipping
+Creating new state
+considering log /opt/seafile/logs/seahub_email_sender.log
+Creating new state
+  Now: 2026-08-25 23:55
+  Last rotated at 2026-08-25 23:00
+  log does not need rotating (log is empty)
+considering log /opt/seafile/logs/work_weixin_notice_sender.log
+  log /opt/seafile/logs/work_weixin_notice_sender.log does not exist -- skipping
+Creating new state
+considering log /opt/seafile/logs/index.log
+  log /opt/seafile/logs/index.log does not exist -- skipping
+Creating new state
+considering log /opt/seafile/logs/content_scan.log
+  log /opt/seafile/logs/content_scan.log does not exist -- skipping
+Creating new state
+considering log /opt/seafile/logs/fileserver.log
+Creating new state
+  Now: 2026-08-25 23:55
+  Last rotated at 2026-08-25 23:00
+  log needs rotating
+considering log /opt/seafile/logs/fileserver-access.log
+  log /opt/seafile/logs/fileserver-access.log does not exist -- skipping
+Creating new state
+considering log /opt/seafile/logs/fileserver-error.log
+  log /opt/seafile/logs/fileserver-error.log does not exist -- skipping
+Creating new state
+considering log /opt/seafile/logs/notification-server.log
+  log /opt/seafile/logs/notification-server.log does not exist -- skipping
+Creating new state
+considering log /opt/seafile/logs/notification-server-error.log
+  log /opt/seafile/logs/notification-server-error.log does not exist -- skipping
+Creating new state
+rotating log /opt/seafile/logs/seafile.log, log->rotateCount is 7
+Converted '.%Y-%m-%d' -> '.%Y-%m-%d'
+dateext suffix '.2026-08-25'
+glob pattern '.[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]'
+glob finding old rotated logs failed
+rotating log /opt/seafile/logs/seahub.log, log->rotateCount is 7
+Converted '.%Y-%m-%d' -> '.%Y-%m-%d'
+dateext suffix '.2026-08-25'
+glob pattern '.[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]'
+glob finding old rotated logs failed
+rotating log /opt/seafile/logs/fileserver.log, log->rotateCount is 7
+Converted '.%Y-%m-%d' -> '.%Y-%m-%d'
+dateext suffix '.2026-08-25'
+glob pattern '.[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]'
+glob finding old rotated logs failed
+renaming /opt/seafile/logs/seafile.log to /opt/seafile/logs/seafile.log.2026-08-25
+creating new /opt/seafile/logs/seafile.log mode = 0644 uid = 0 gid = 0
+renaming /opt/seafile/logs/seahub.log to /opt/seafile/logs/seahub.log.2026-08-25
+creating new /opt/seafile/logs/seahub.log mode = 0644 uid = 0 gid = 0
+renaming /opt/seafile/logs/fileserver.log to /opt/seafile/logs/fileserver.log.2026-08-25
+creating new /opt/seafile/logs/fileserver.log mode = 0644 uid = 0 gid = 0
+running postrotate script
+reading config file /scripts/logrotate-conf/seafile-nginx
+Creating stub state file: /var/lib/logrotate/status
+acquired lock on state file /var/lib/logrotate/statusReading state from file: /var/lib/logrotate/status
+Allocating hash table for state file, size 64 entries
+
+Handling 1 logs
+
+rotating pattern: /shared/seafile/logs/seahub.access.log
+/shared/seafile/logs/seahub.error.log
+/shared/seafile/logs/seafhttp.access.log
+/shared/seafile/logs/seafhttp.error.log
+/shared/seafile/logs/seafdav.access.log
+/shared/seafile/logs/seafdav.error.log
+
+ forced from command line (7 rotations)
+empty log files are not rotated, old logs are removed
+considering log /shared/seafile/logs/seahub.access.log
+Creating new state
+  Now: 2026-09-09 23:54
+  Last rotated at 2026-09-09 23:00
+  log needs rotating
+considering log /shared/seafile/logs/seahub.error.log
+Creating new state
+  Now: 2026-09-09 23:54
+  Last rotated at 2026-09-09 23:00
+  log needs rotating
+considering log /shared/seafile/logs/seafhttp.access.log
+Creating new state
+  Now: 2026-09-09 23:54
+  Last rotated at 2026-09-09 23:00
+  log needs rotating
+considering log /shared/seafile/logs/seafhttp.error.log
+Creating new state
+  Now: 2026-09-09 23:54
+  Last rotated at 2026-09-09 23:00
+  log does not need rotating (log is empty)
+considering log /shared/seafile/logs/seafdav.access.log
+Creating new state
+  Now: 2026-09-09 23:54
+  Last rotated at 2026-09-09 23:00
+  log does not need rotating (log is empty)
+considering log /shared/seafile/logs/seafdav.error.log
+Creating new state
+  Now: 2026-09-09 23:54
+  Last rotated at 2026-09-09 23:00
+  log does not need rotating (log is empty)
+rotating log /shared/seafile/logs/seahub.access.log, log->rotateCount is 7
+Converted '.%Y-%m-%d' -> '.%Y-%m-%d'
+dateext suffix '.2026-09-09'
+glob pattern '.[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]'
+rotating log /shared/seafile/logs/seahub.error.log, log->rotateCount is 7
+Converted '.%Y-%m-%d' -> '.%Y-%m-%d'
+dateext suffix '.2026-09-09'
+glob pattern '.[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]'
+rotating log /shared/seafile/logs/seafhttp.access.log, log->rotateCount is 7
+Converted '.%Y-%m-%d' -> '.%Y-%m-%d'
+dateext suffix '.2026-09-09'
+glob pattern '.[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]'
+renaming /shared/seafile/logs/seahub.access.log to /shared/seafile/logs/seahub.access.log.2026-09-09
+creating new /shared/seafile/logs/seahub.access.log mode = 0640 uid = 0 gid = 0
+renaming /shared/seafile/logs/seahub.error.log to /shared/seafile/logs/seahub.error.log.2026-09-09
+creating new /shared/seafile/logs/seahub.error.log mode = 0640 uid = 0 gid = 0
+renaming /shared/seafile/logs/seafhttp.access.log to /shared/seafile/logs/seafhttp.access.log.2026-09-09
+creating new /shared/seafile/logs/seafhttp.access.log mode = 0640 uid = 0 gid = 0
+running postrotate script
+reading config file /scripts/logrotate-conf/seafile
+acquired lock on state file /var/lib/logrotate/statusReading state from file: /var/lib/logrotate/status
+Allocating hash table for state file, size 64 entries
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+
+Handling 1 logs
+
+rotating pattern: /opt/seafile/logs/seafile.log
+/opt/seafile/logs/seahub.log
+/opt/seafile/logs/seafdav.log
+/opt/seafile/logs/file_updates_sender.log
+/opt/seafile/logs/repo_old_file_auto_del_scan.log
+/opt/seafile/logs/seahub_email_sender.log
+/opt/seafile/logs/work_weixin_notice_sender.log
+/opt/seafile/logs/index.log
+/opt/seafile/logs/content_scan.log
+/opt/seafile/logs/fileserver.log
+/opt/seafile/logs/fileserver-access.log
+/opt/seafile/logs/fileserver-error.log
+/opt/seafile/logs/notification-server.log
+/opt/seafile/logs/notification-server-error.log
+
+ forced from command line (7 rotations)
+empty log files are not rotated, old logs are removed
+considering log /opt/seafile/logs/seafile.log
+Creating new state
+  Now: 2026-09-09 23:55
+  Last rotated at 2026-09-09 23:00
+  log needs rotating
+considering log /opt/seafile/logs/seahub.log
+Creating new state
+  Now: 2026-09-09 23:55
+  Last rotated at 2026-09-09 23:00
+  log does not need rotating (log is empty)
+considering log /opt/seafile/logs/seafdav.log
+  log /opt/seafile/logs/seafdav.log does not exist -- skipping
+Creating new state
+considering log /opt/seafile/logs/file_updates_sender.log
+Creating new state
+  Now: 2026-09-09 23:55
+  Last rotated at 2026-09-09 23:00
+  log does not need rotating (log is empty)
+considering log /opt/seafile/logs/repo_old_file_auto_del_scan.log
+  log /opt/seafile/logs/repo_old_file_auto_del_scan.log does not exist -- skipping
+Creating new state
+considering log /opt/seafile/logs/seahub_email_sender.log
+Creating new state
+  Now: 2026-09-09 23:55
+  Last rotated at 2026-09-09 23:00
+  log does not need rotating (log is empty)
+considering log /opt/seafile/logs/work_weixin_notice_sender.log
+  log /opt/seafile/logs/work_weixin_notice_sender.log does not exist -- skipping
+Creating new state
+considering log /opt/seafile/logs/index.log
+  log /opt/seafile/logs/index.log does not exist -- skipping
+Creating new state
+considering log /opt/seafile/logs/content_scan.log
+  log /opt/seafile/logs/content_scan.log does not exist -- skipping
+Creating new state
+considering log /opt/seafile/logs/fileserver.log
+Creating new state
+  Now: 2026-09-09 23:55
+  Last rotated at 2026-09-09 23:00
+  log needs rotating
+considering log /opt/seafile/logs/fileserver-access.log
+  log /opt/seafile/logs/fileserver-access.log does not exist -- skipping
+Creating new state
+considering log /opt/seafile/logs/fileserver-error.log
+  log /opt/seafile/logs/fileserver-error.log does not exist -- skipping
+Creating new state
+considering log /opt/seafile/logs/notification-server.log
+  log /opt/seafile/logs/notification-server.log does not exist -- skipping
+Creating new state
+considering log /opt/seafile/logs/notification-server-error.log
+  log /opt/seafile/logs/notification-server-error.log does not exist -- skipping
+Creating new state
+rotating log /opt/seafile/logs/seafile.log, log->rotateCount is 7
+Converted '.%Y-%m-%d' -> '.%Y-%m-%d'
+dateext suffix '.2026-09-09'
+glob pattern '.[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]'
+rotating log /opt/seafile/logs/fileserver.log, log->rotateCount is 7
+Converted '.%Y-%m-%d' -> '.%Y-%m-%d'
+dateext suffix '.2026-09-09'
+glob pattern '.[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]'
+renaming /opt/seafile/logs/seafile.log to /opt/seafile/logs/seafile.log.2026-09-09
+creating new /opt/seafile/logs/seafile.log mode = 0644 uid = 0 gid = 0
+renaming /opt/seafile/logs/fileserver.log to /opt/seafile/logs/fileserver.log.2026-09-09
+creating new /opt/seafile/logs/fileserver.log mode = 0644 uid = 0 gid = 0
+running postrotate script
+reading config file /scripts/logrotate-conf/seafile-nginx
+acquired lock on state file /var/lib/logrotate/statusReading state from file: /var/lib/logrotate/status
+Allocating hash table for state file, size 64 entries
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+
+Handling 1 logs
+
+rotating pattern: /shared/seafile/logs/seahub.access.log
+/shared/seafile/logs/seahub.error.log
+/shared/seafile/logs/seafhttp.access.log
+/shared/seafile/logs/seafhttp.error.log
+/shared/seafile/logs/seafdav.access.log
+/shared/seafile/logs/seafdav.error.log
+
+ forced from command line (7 rotations)
+empty log files are not rotated, old logs are removed
+considering log /shared/seafile/logs/seahub.access.log
+  Now: 2026-09-10 23:54
+  Last rotated at 2026-09-09 23:54
+  log needs rotating
+considering log /shared/seafile/logs/seahub.error.log
+  Now: 2026-09-10 23:54
+  Last rotated at 2026-09-09 23:54
+  log does not need rotating (log is empty)
+considering log /shared/seafile/logs/seafhttp.access.log
+  Now: 2026-09-10 23:54
+  Last rotated at 2026-09-09 23:54
+  log does not need rotating (log is empty)
+considering log /shared/seafile/logs/seafhttp.error.log
+  log /shared/seafile/logs/seafhttp.error.log does not exist -- skipping
+considering log /shared/seafile/logs/seafdav.access.log
+  log /shared/seafile/logs/seafdav.access.log does not exist -- skipping
+considering log /shared/seafile/logs/seafdav.error.log
+  log /shared/seafile/logs/seafdav.error.log does not exist -- skipping
+rotating log /shared/seafile/logs/seahub.access.log, log->rotateCount is 7
+Converted '.%Y-%m-%d' -> '.%Y-%m-%d'
+dateext suffix '.2026-09-10'
+glob pattern '.[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]'
+renaming /shared/seafile/logs/seahub.access.log to /shared/seafile/logs/seahub.access.log.2026-09-10
+creating new /shared/seafile/logs/seahub.access.log mode = 0640 uid = 0 gid = 0
+running postrotate script
+reading config file /scripts/logrotate-conf/seafile
+acquired lock on state file /var/lib/logrotate/statusReading state from file: /var/lib/logrotate/status
+Allocating hash table for state file, size 64 entries
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+Creating new state
+
+Handling 1 logs
+
+rotating pattern: /opt/seafile/logs/seafile.log
+/opt/seafile/logs/seahub.log
+/opt/seafile/logs/seafdav.log
+/opt/seafile/logs/file_updates_sender.log
+/opt/seafile/logs/repo_old_file_auto_del_scan.log
+/opt/seafile/logs/seahub_email_sender.log
+/opt/seafile/logs/work_weixin_notice_sender.log
+/opt/seafile/logs/index.log
+/opt/seafile/logs/content_scan.log
+/opt/seafile/logs/fileserver.log
+/opt/seafile/logs/fileserver-access.log
+/opt/seafile/logs/fileserver-error.log
+/opt/seafile/logs/notification-server.log
+/opt/seafile/logs/notification-server-error.log
+
+ forced from command line (7 rotations)
+empty log files are not rotated, old logs are removed
+considering log /opt/seafile/logs/seafile.log
+  Now: 2026-09-10 23:55
+  Last rotated at 2026-09-09 23:55
+  log does not need rotating (log is empty)
+considering log /opt/seafile/logs/seahub.log
+  log /opt/seafile/logs/seahub.log does not exist -- skipping
+considering log /opt/seafile/logs/seafdav.log
+  log /opt/seafile/logs/seafdav.log does not exist -- skipping
+considering log /opt/seafile/logs/file_updates_sender.log
+  log /opt/seafile/logs/file_updates_sender.log does not exist -- skipping
+considering log /opt/seafile/logs/repo_old_file_auto_del_scan.log
+  log /opt/seafile/logs/repo_old_file_auto_del_scan.log does not exist -- skipping
+considering log /opt/seafile/logs/seahub_email_sender.log
+  log /opt/seafile/logs/seahub_email_sender.log does not exist -- skipping
+considering log /opt/seafile/logs/work_weixin_notice_sender.log
+  log /opt/seafile/logs/work_weixin_notice_sender.log does not exist -- skipping
+considering log /opt/seafile/logs/index.log
+  log /opt/seafile/logs/index.log does not exist -- skipping
+considering log /opt/seafile/logs/content_scan.log
+  log /opt/seafile/logs/content_scan.log does not exist -- skipping
+considering log /opt/seafile/logs/fileserver.log
+  Now: 2026-09-10 23:55
+  Last rotated at 2026-09-09 23:55
+  log does not need rotating (log is empty)
+considering log /opt/seafile/logs/fileserver-access.log
+  log /opt/seafile/logs/fileserver-access.log does not exist -- skipping
+considering log /opt/seafile/logs/fileserver-error.log
+  log /opt/seafile/logs/fileserver-error.log does not exist -- skipping
+considering log /opt/seafile/logs/notification-server.log
+  log /opt/seafile/logs/notification-server.log does not exist -- skipping
+considering log /opt/seafile/logs/notification-server-error.log
+  log /opt/seafile/logs/notification-server-error.log does not exist -- skipping
+not running postrotate script, since no logs were rotated

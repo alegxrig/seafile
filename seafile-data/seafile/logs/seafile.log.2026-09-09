@@ -1,0 +1,59 @@
+[2026-08-26 12:56:06] [INFO] seafile-session.c(53): fileserver: web_token_expire_time = 3600
+[2026-08-26 12:56:06] [INFO] seafile-session.c(65): fileserver: max_index_processing_threads= 3
+[2026-08-26 12:56:06] [INFO] seafile-session.c(78): fileserver: fixed_block_size = 8388608
+[2026-08-26 12:56:06] [INFO] seafile-session.c(90): fileserver: max_indexing_threads = 1
+[2026-08-26 12:56:06] [INFO] seafile-session.c(103): fileserver: max_upload_size = -1
+[2026-08-26 12:56:06] [INFO] ../common/seaf-utils.c(399): Use database Mysql
+[2026-08-26 12:56:06] [INFO] http-server.c(196): fileserver: worker_threads = 10
+[2026-08-26 12:56:06] [INFO] http-server.c(207): fileserver: verify_client_blocks = 1
+[2026-08-26 12:56:06] [INFO] http-server.c(229): fileserver: cluster_shared_temp_file_mode = 600
+[2026-08-26 12:56:06] [INFO] socket file exists, delete it anyway
+[2026-08-26 12:56:26] [INFO] seafile-session.c(53): fileserver: web_token_expire_time = 3600
+[2026-08-26 12:56:26] [INFO] seafile-session.c(65): fileserver: max_index_processing_threads= 3
+[2026-08-26 12:56:26] [INFO] seafile-session.c(78): fileserver: fixed_block_size = 8388608
+[2026-08-26 12:56:26] [INFO] seafile-session.c(90): fileserver: max_indexing_threads = 1
+[2026-08-26 12:56:26] [INFO] seafile-session.c(103): fileserver: max_upload_size = -1
+[2026-08-26 12:56:26] [INFO] ../common/seaf-utils.c(399): Use database Mysql
+[2026-08-26 12:56:26] [INFO] http-server.c(196): fileserver: worker_threads = 10
+[2026-08-26 12:56:26] [INFO] http-server.c(207): fileserver: verify_client_blocks = 1
+[2026-08-26 12:56:26] [INFO] http-server.c(229): fileserver: cluster_shared_temp_file_mode = 600
+[2026-08-26 12:56:26] [INFO] socket file exists, delete it anyway
+[2026-09-02 07:26:32] [INFO] seafile-session.c(53): fileserver: web_token_expire_time = 3600
+[2026-09-02 07:26:32] [INFO] seafile-session.c(65): fileserver: max_index_processing_threads= 3
+[2026-09-02 07:26:32] [INFO] seafile-session.c(78): fileserver: fixed_block_size = 8388608
+[2026-09-02 07:26:32] [INFO] seafile-session.c(90): fileserver: max_indexing_threads = 1
+[2026-09-02 07:26:32] [INFO] seafile-session.c(103): fileserver: max_upload_size = -1
+[2026-09-02 07:26:32] [INFO] ../common/seaf-utils.c(399): Use database Mysql
+[2026-09-02 07:26:32] [INFO] http-server.c(196): fileserver: worker_threads = 10
+[2026-09-02 07:26:32] [INFO] http-server.c(207): fileserver: verify_client_blocks = 1
+[2026-09-02 07:26:32] [INFO] http-server.c(229): fileserver: cluster_shared_temp_file_mode = 600
+[2026-07-27 20:44:20] [INFO] seafile-session.c(53): fileserver: web_token_expire_time = 3600
+[2026-07-27 20:44:20] [INFO] seafile-session.c(65): fileserver: max_index_processing_threads= 3
+[2026-07-27 20:44:20] [INFO] seafile-session.c(78): fileserver: fixed_block_size = 8388608
+[2026-07-27 20:44:20] [INFO] seafile-session.c(90): fileserver: max_indexing_threads = 1
+[2026-07-27 20:44:20] [INFO] seafile-session.c(103): fileserver: max_upload_size = -1
+[2026-07-27 20:44:20] [INFO] ../common/seaf-utils.c(399): Use database Mysql
+[2026-07-27 20:44:20] [INFO] http-server.c(196): fileserver: worker_threads = 10
+[2026-07-27 20:44:20] [INFO] http-server.c(207): fileserver: verify_client_blocks = 1
+[2026-07-27 20:44:20] [INFO] http-server.c(229): fileserver: cluster_shared_temp_file_mode = 600
+[2026-07-27 20:44:20] [INFO] socket file exists, delete it anyway
+[2026-09-09 13:23:02] [INFO] seafile-session.c(53): fileserver: web_token_expire_time = 3600
+[2026-09-09 13:23:02] [INFO] seafile-session.c(65): fileserver: max_index_processing_threads= 3
+[2026-09-09 13:23:02] [INFO] seafile-session.c(78): fileserver: fixed_block_size = 8388608
+[2026-09-09 13:23:02] [INFO] seafile-session.c(90): fileserver: max_indexing_threads = 1
+[2026-09-09 13:23:02] [INFO] seafile-session.c(103): fileserver: max_upload_size = -1
+[2026-09-09 13:23:02] [INFO] ../common/seaf-utils.c(399): Use database Mysql
+[2026-09-09 13:23:02] [INFO] http-server.c(196): fileserver: worker_threads = 10
+[2026-09-09 13:23:02] [INFO] http-server.c(207): fileserver: verify_client_blocks = 1
+[2026-09-09 13:23:02] [INFO] http-server.c(229): fileserver: cluster_shared_temp_file_mode = 600
+[2026-09-09 13:23:02] [INFO] socket file exists, delete it anyway
+[2026-09-09 13:24:50] [INFO] seafile-session.c(53): fileserver: web_token_expire_time = 3600
+[2026-09-09 13:24:50] [INFO] seafile-session.c(65): fileserver: max_index_processing_threads= 3
+[2026-09-09 13:24:50] [INFO] seafile-session.c(78): fileserver: fixed_block_size = 8388608
+[2026-09-09 13:24:50] [INFO] seafile-session.c(90): fileserver: max_indexing_threads = 1
+[2026-09-09 13:24:50] [INFO] seafile-session.c(103): fileserver: max_upload_size = -1
+[2026-09-09 13:24:50] [INFO] ../common/seaf-utils.c(399): Use database Mysql
+[2026-09-09 13:24:50] [INFO] http-server.c(196): fileserver: worker_threads = 10
+[2026-09-09 13:24:50] [INFO] http-server.c(207): fileserver: verify_client_blocks = 1
+[2026-09-09 13:24:50] [INFO] http-server.c(229): fileserver: cluster_shared_temp_file_mode = 600
+[2026-09-09 13:24:50] [INFO] socket file exists, delete it anyway

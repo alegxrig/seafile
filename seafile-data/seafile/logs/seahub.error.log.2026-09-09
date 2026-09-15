@@ -1,0 +1,4 @@
+2026/09/02 07:26:36 [error] 43#43: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost"
+2026/07/27 20:44:22 [error] 45#45: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost"
+2026/09/09 13:23:04 [error] 45#45: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost"
+2026/09/09 13:24:53 [error] 44#44: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "localhost"

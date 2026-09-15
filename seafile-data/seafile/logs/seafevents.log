@@ -1,0 +1,46 @@
+[2026-09-15 07:52:11] [INFO] root:83 LDAP is not set, disable ldap sync.
+[2026-09-15 07:52:11] [INFO] virus_scan:51 [virus_scan] scan_command option is not found in seafile.conf, disable virus scan.
+[2026-09-15 07:52:11] [INFO] seafevents.app.mq_handler:127 Subscribe to channels: {'seaf_server.stats', 'seaf_server.event', 'seahub.stats'}
+[2026-09-15 07:52:11] [INFO] root:534 Start counting user activity info..
+[2026-09-15 07:52:11] [INFO] root:547 [UserActivityCounter] update 0 items.
+[2026-09-15 07:52:11] [INFO] root:240 Start counting traffic info..
+[2026-09-15 07:52:11] [INFO] root:268 Traffic counter finished, total time: 0.004107952117919922 seconds.
+[2026-09-15 07:52:11] [INFO] root:23 Start file updates sender, interval = 300 sec
+[2026-09-15 07:52:11] [INFO] waitress:449 Serving on http://127.0.0.1:8889
+[2026-09-15 07:52:11] [WARNING] root:57 Can not start work weixin notice sender: it is not enabled!
+[2026-09-15 07:52:11] [WARNING] root:130 Can not start index updater: it is not enabled!
+[2026-09-15 07:52:11] [INFO] root:56 seahub email sender is started, interval = 1800 sec
+[2026-09-15 07:52:11] [WARNING] root:17 Can not start ldap syncer: it is not enabled!
+[2026-09-15 07:52:11] [WARNING] root:18 Can not start virus scanner: it is not enabled!
+[2026-09-15 07:52:11] [INFO] root:35 Start data statistics..
+[2026-09-15 07:52:11] [WARNING] root:40 Can not start content scanner: it is not enabled!
+[2026-09-15 07:52:11] [WARNING] root:46 Can not scan repo old files auto del days: it is not enabled!
+[2026-09-15 07:52:11] [INFO] root:182 Start counting total storage..
+[2026-09-15 07:52:11] [INFO] root:117 Start metric collect, interval = 15 sec
+[2026-09-15 07:52:11] [INFO] root:87 Start counting file operations..
+[2026-09-15 07:52:11] [INFO] root:403 Start counting monthly traffic info..
+[2026-09-15 07:52:11] [INFO] root:121 Starting metric handler
+[2026-09-15 07:52:11] [INFO] root:48 Starting handle redis channel
+[2026-09-15 07:52:11] [WARNING] root:86 Can not start seasearch file index updater: it is not enabled!
+[2026-09-15 07:52:11] [WARNING] root:87 Can not start seasearch wiki index updater: it is not enabled!
+[2026-09-15 07:52:11] [WARNING] root:112 Can not start wiki index updater: it is not enabled!
+[2026-09-15 07:52:11] [INFO] root:215 Starting quota usage saver timer, interval = 30 sec
+[2026-09-15 07:52:11] [INFO] root:219 Starting repo change collector
+[2026-09-15 07:52:11] [INFO] root:162 Starting handle redis channel
+[2026-09-15 07:52:11] [INFO] root:22 seahub quota alert email sender is started, interval = 86400 sec
+[2026-09-15 07:52:11] [INFO] root:169 [FileOpsCounter] Finish counting file operations in 0.08415055274963379 seconds, 0 added, 0 deleted, 0 visited, 0 modified
+[2026-09-15 07:52:11] [INFO] root:491 Monthly traffic counter finished, update 1 user items, 1 org items, total time: 0.11725759506225586 seconds.
+[2026-09-15 07:52:11] [INFO] root:225 [TotalStorageCounter] Finish counting total storage in 0.14263534545898438 seconds.
+[2026-09-15 08:22:11] [INFO] root:74 starts to send email
+[2026-09-15 08:52:11] [INFO] root:534 Start counting user activity info..
+[2026-09-15 08:52:11] [INFO] root:547 [UserActivityCounter] update 0 items.
+[2026-09-15 08:52:11] [INFO] root:240 Start counting traffic info..
+[2026-09-15 08:52:11] [INFO] root:268 Traffic counter finished, total time: 0.0017147064208984375 seconds.
+[2026-09-15 08:52:11] [INFO] root:74 starts to send email
+[2026-09-15 08:52:11] [INFO] root:87 Start counting file operations..
+[2026-09-15 08:52:11] [INFO] root:169 [FileOpsCounter] Finish counting file operations in 0.010778427124023438 seconds, 0 added, 0 deleted, 0 visited, 0 modified
+[2026-09-15 08:52:11] [INFO] root:403 Start counting monthly traffic info..
+[2026-09-15 08:52:11] [INFO] root:491 Monthly traffic counter finished, update 1 user items, 1 org items, total time: 0.017789602279663086 seconds.
+[2026-09-15 08:52:11] [INFO] root:182 Start counting total storage..
+[2026-09-15 08:52:11] [INFO] root:225 [TotalStorageCounter] Finish counting total storage in 0.04017233848571777 seconds.
+[2026-09-15 09:22:11] [INFO] root:74 starts to send email

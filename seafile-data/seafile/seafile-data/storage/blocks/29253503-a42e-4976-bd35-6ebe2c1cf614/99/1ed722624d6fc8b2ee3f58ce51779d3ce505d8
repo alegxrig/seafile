@@ -1,0 +1,160 @@
+bic@ubuntu:/opt/seafile$ sudo docker compose ps
+NAME            IMAGE                               COMMAND                  SERVICE   CREATED         STATUS                   PORTS
+seafile         seafileltd/seafile-mc:13.0-latest   "/sbin/my_init -- /s…"   seafile   7 minutes ago   Up 7 minutes (healthy)   80/tcp
+seafile-mysql   mariadb:10.11                       "docker-entrypoint.s…"   db        7 minutes ago   Up 7 minutes (healthy)   3306/tcp
+seafile-redis   redis                               "docker-entrypoint.s…"   redis     7 minutes ago   Up 7 minutes             6379/tcp
+bic@ubuntu:/opt/seafile$ docker compose logs seafile --tail 80
+permission denied while trying to connect to the docker API at unix:///var/run/docker.sock
+bic@ubuntu:/opt/seafile$ 
+bic@ubuntu:/opt/seafile$ 
+bic@ubuntu:/opt/seafile$ 
+bic@ubuntu:/opt/seafile$ 
+bic@ubuntu:/opt/seafile$ 
+bic@ubuntu:/opt/seafile$ 
+bic@ubuntu:/opt/seafile$ 
+bic@ubuntu:/opt/seafile$ 
+bic@ubuntu:/opt/seafile$ 
+bic@ubuntu:/opt/seafile$ 
+bic@ubuntu:/opt/seafile$ 
+bic@ubuntu:/opt/seafile$ 
+bic@ubuntu:/opt/seafile$ 
+bic@ubuntu:/opt/seafile$ 
+bic@ubuntu:/opt/seafile$ sudo docker compose ps
+NAME            IMAGE                               COMMAND                  SERVICE   CREATED         STATUS                   PORTS
+seafile         seafileltd/seafile-mc:13.0-latest   "/sbin/my_init -- /s…"   seafile   8 minutes ago   Up 7 minutes (healthy)   80/tcp
+seafile-mysql   mariadb:10.11                       "docker-entrypoint.s…"   db        8 minutes ago   Up 8 minutes (healthy)   3306/tcp
+seafile-redis   redis                               "docker-entrypoint.s…"   redis     8 minutes ago   Up 8 minutes             6379/tcp
+bic@ubuntu:/opt/seafile$ sudo docker compose logs seafile --tail 80
+seafile  |     seafile data dir:       /opt/seafile/seafile-data
+seafile  |     fileserver port:        8082
+seafile  | 
+seafile  |     database:               create new
+seafile  |     ccnet database:         ccnet_db
+seafile  |     seafile database:       seafile_db
+seafile  |     seahub database:        seahub_db
+seafile  |     database user:          seafile
+seafile  | 
+seafile  | 
+seafile  | Generating seafile configuration ...
+seafile  | 
+seafile  | done
+seafile  | Generating seahub configuration ...
+seafile  | 
+seafile  | ----------------------------------------
+seafile  | Now creating seafevents database tables ...
+seafile  | 
+seafile  | ----------------------------------------
+seafile  | ----------------------------------------
+seafile  | Now creating ccnet database tables ...
+seafile  | 
+seafile  | ----------------------------------------
+seafile  | ----------------------------------------
+seafile  | Now creating seafile database tables ...
+seafile  | 
+seafile  | ----------------------------------------
+seafile  | ----------------------------------------
+seafile  | Now creating seahub database tables ...
+seafile  | 
+seafile  | ----------------------------------------
+seafile  | 
+seafile  | creating seafile-server-latest symbolic link ...  done
+seafile  | 
+seafile  | 
+seafile  | 
+seafile  | 
+seafile  | -----------------------------------------------------------------
+seafile  | Your seafile server configuration has been finished successfully.
+seafile  | -----------------------------------------------------------------
+seafile  | 
+seafile  | run seafile server:     ./seafile.sh { start | stop | restart }
+seafile  | run seahub  server:     ./seahub.sh  { start <port> | stop | restart <port> }
+seafile  | 
+seafile  | -----------------------------------------------------------------
+seafile  | If you are behind a firewall, remember to allow input/output of these tcp ports:
+seafile  | -----------------------------------------------------------------
+seafile  | 
+seafile  | port of seafile fileserver:   8082
+seafile  | port of seahub:               8000
+seafile  | 
+seafile  | When problems occur, Refer to
+seafile  | 
+seafile  |         https://download.seafile.com/published/seafile-manual/home.md
+seafile  | 
+seafile  | for information.
+seafile  | 
+seafile  | 
+seafile  | [2026-08-25 12:21:54] Updating version stamp
+seafile  | 
+seafile  | Starting seafile server, please wait ...
+seafile  | Seafile server started
+seafile  | 
+seafile  | Done.
+seafile  | 
+seafile  | Starting seahub at port 8000 ...
+seafile  | 
+seafile  | 
+seafile  | 
+seafile  | ----------------------------------------
+seafile  | Successfully created seafile admin
+seafile  | ----------------------------------------
+seafile  | 
+seafile  | 
+seafile  | 
+seafile  | 
+seafile  | Seahub is started
+seafile  | 
+seafile  | Done.
+seafile  | 
+bic@ubuntu:/opt/seafile$ curl -I https://127.0.0.1
+curl: (7) Failed to connect to 127.0.0.1 port 443 after 0 ms: Could not connect to server
+bic@ubuntu:/opt/seafile$ curl -I https://10.10.112.207
+curl: (7) Failed to connect to 10.10.112.207 port 443 after 0 ms: Could not connect to server
+bic@ubuntu:/opt/seafile$ hostname -I
+10.10.112.207 172.17.0.1 172.18.0.1 
+bic@ubuntu:/opt/seafile$ 
+bic@ubuntu:/opt/seafile$ sudo ss -tulpn | grep -E ':80|:443'
+bic@ubuntu:/opt/seafile$ ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+3: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 24:0a:64:18:98:95 brd ff:ff:ff:ff:ff:ff
+    altname wlx240a64189895
+    inet 10.10.112.207/24 brd 10.10.112.255 scope global dynamic noprefixroute wlan0
+       valid_lft 561sec preferred_lft 561sec
+    inet6 fe80::dcfa:89ad:84c9:284a/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+4: wwp0s29u1u4c2: <BROADCAST,MULTICAST,NOARP> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 02:57:e2:03:dd:b9 brd ff:ff:ff:ff:ff:ff
+5: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether a2:0b:10:52:ba:24 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::a00b:10ff:fe52:ba24/64 scope link proto kernel_ll 
+       valid_lft forever preferred_lft forever
+7: br-6d744810c026: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 4a:c8:14:f5:09:8b brd ff:ff:ff:ff:ff:ff
+    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-6d744810c026
+       valid_lft forever preferred_lft forever
+    inet6 fe80::48c8:14ff:fef5:98b/64 scope link proto kernel_ll 
+       valid_lft forever preferred_lft forever
+8: vethab8369d@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-6d744810c026 state UP group default 
+    link/ether 42:66:9f:97:83:b1 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet6 fe80::4066:9fff:fe97:83b1/64 scope link proto kernel_ll 
+       valid_lft forever preferred_lft forever
+9: vethc0b75df@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-6d744810c026 state UP group default 
+    link/ether 36:de:1d:e8:fd:30 brd ff:ff:ff:ff:ff:ff link-netnsid 1
+    inet6 fe80::34de:1dff:fee8:fd30/64 scope link proto kernel_ll 
+       valid_lft forever preferred_lft forever
+10: vethd88b991@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-6d744810c026 state UP group default 
+    link/ether 5a:93:8e:23:4e:d7 brd ff:ff:ff:ff:ff:ff link-netnsid 2
+    inet6 fe80::5893:8eff:fe23:4ed7/64 scope link proto kernel_ll 
+       valid_lft forever preferred_lft forever
+bic@ubuntu:/opt/seafile$ sudo ufw allow 80/tcp
+Rules updated
+Rules updated (v6)
+bic@ubuntu:/opt/seafile$ 
+
